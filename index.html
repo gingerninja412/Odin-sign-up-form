@@ -22,7 +22,7 @@
         This is not a real service, but feel free to sign up
       </h1>
       <h3>It might be useful</h3>
-      <form action="#">
+      <form>
         <h2>Enter your details here</h2>
         <div class="field">
           <label for="FirstName">First Name</label><br />
@@ -52,6 +52,7 @@
             id="Email"
             placeholder=" eg JohnSmith@gmail.com"
             required
+            pattern="(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)"
           />
         </div>
         <div class="field">
@@ -62,6 +63,7 @@
             id="PhoneNumber"
             placeholder="eg +44 6734 820 123"
             required
+            pattern="(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)"
           />
         </div>
         <div class="field">
@@ -72,6 +74,8 @@
             id="Password"
             placeholder="eg *************"
             required
+            minlength="8"
+            pattern="(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$/)"
           />
         </div>
         <div class="field">

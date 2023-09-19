@@ -55,6 +55,10 @@ input {
   padding: 5px;
 }
 
+input:invalid {
+  border-color: red;
+}
+
 button {
   padding: 10px;
   border-radius: 10px;
