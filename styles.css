@@ -9,7 +9,7 @@ body {
 }
 
 .left-graphic {
-  background-image: url(/page_background.jpg);
+  background-image: url(page_background.jpg);
   background-size: cover;
   height: 100vh;
   width: 50%;
